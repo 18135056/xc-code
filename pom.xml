@@ -12,6 +12,7 @@
 		<module>xc-code-btrace</module>
 		<module>xc-code-web</module>
 		<module>xc-code-spring</module>
+		<module>xc-code-mybatis</module>
 	</modules>
 	<properties>
 		<java.version>1.6</java.version>

@@ -1,5 +1,5 @@
-call mvn eclipse:eclipse -U
-call mvn clean package -P dev -U -Dmaven.test.skip=true
+call mvn clean
+call mvn install 
 cd xc-code-web 
 call mvn jetty:run
 @pause

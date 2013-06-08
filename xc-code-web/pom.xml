@@ -18,6 +18,11 @@
 			<artifactId>xc-code-spring</artifactId>
 			<version>${xc-code-all.version}</version>
 		</dependency> 
+		 <dependency>
+			<groupId>cn.xc.mybatis</groupId>
+			<artifactId>xc-code-mybatis</artifactId>
+			<version>${xc-code-all.version}</version>
+		</dependency> 
 	</dependencies>
 	<build>
 		<plugins>
