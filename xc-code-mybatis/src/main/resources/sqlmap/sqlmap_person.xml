@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+
+<sqlMap namespace="personSqlMap">
+	<typeAlias alias="personDO" type="cn.xc.ibatis.model.PersonDO" />
+	<resultMap id="personDOResultMap" class="personDO">
+		<result property="id" column="id" />
+		<result property="firstName" column="first_name" />
+		<result property="lastName" column="last_name" />
+	</resultMap>
+	<select id="findByPrimaryKey" parameterClass="java.lang.Long"
+		resultMap="personDOResultMap">
+		SELECT * 
+    <![CDATA[  
+     FROM person a1 WHERE id = #id#
+    ]]>
+	</select>
+</sqlMap>
